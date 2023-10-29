@@ -1,0 +1,47 @@
+.showphotos_wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.showphotos_title {
+  color: #8c418a;
+}
+
+.showphotos_desc {
+  color: #4d4c58;
+  font-size: 9px;
+}
+
+#showphotos_input {
+  display: none;
+}
+
+.showphotos_checkbox {
+  position: relative;
+  display: inline-block;
+  border: 1.5px solid #ccc;
+  border-radius: 50px;
+  width: 33px;
+  height: 18px;
+}
+
+.showphotos_checkbox::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #9497ab;
+  border: none;
+  border-radius: 50%;
+  top: 1px;
+  transform: translateX(1px);
+  transition: all 0.5s;
+}
+
+#showphotos_input:checked + .showphotos_checkbox::before {
+  transform: translateX(15px);
+  background: #8a4487;
+}

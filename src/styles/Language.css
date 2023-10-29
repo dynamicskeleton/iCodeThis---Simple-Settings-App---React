@@ -1,0 +1,30 @@
+.language_wrapper {
+  margin: 5px;
+}
+
+.language_title {
+  color: #8c418a;
+  margin-bottom: 5px;
+}
+
+.langauge_desc {
+  font-size: 9px;
+  color: #4d4c58;
+}
+
+.language_select {
+  margin-top: 15px;
+  border: 1.5px solid #dcdae6;
+  border-radius: 3px;
+  padding: 5px 70px 5px 5px;
+}
+
+.language_select:focus {
+  border: 2px solid #a7a6ad;
+  outline: none;
+}
+
+.language_hr {
+  margin: 25px 0 20px 0;
+  border: 1px solid #dcdae6;
+}

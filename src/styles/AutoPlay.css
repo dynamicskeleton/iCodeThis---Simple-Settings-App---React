@@ -1,0 +1,51 @@
+.autoplay_wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.autoplay_title {
+  color: #8c418a;
+}
+
+.autoplay_desc {
+  font-size: 9px;
+  color: #4d4c58;
+}
+
+#autoplay_input {
+  display: none;
+}
+
+.autoplay_checkbox {
+  position: relative;
+  display: inline-block;
+  border: 1.5px solid #ccc;
+  border-radius: 50px;
+  width: 33px;
+  height: 18px;
+}
+
+.autoplay_checkbox::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: none;
+  border-radius: 50%;
+  top: 1px;
+  transition: all 0.5s;
+}
+
+#autoplay_input + .autoplay_checkbox::before {
+  content: "";
+  background: #9497ab;
+  transform: translateX(1px);
+}
+
+#autoplay_input:checked + .autoplay_checkbox::before {
+  transform: translateX(15px);
+  background: #8a4487;
+}
